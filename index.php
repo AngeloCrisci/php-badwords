@@ -9,18 +9,21 @@
 </html>
 <body>
     <main>
-    <form>
+        <h1>
+            PHP BADWORDS
+        </h1>
+    <form action="./badword.php" method="GET">
         <div class="mb-3">
-            <label for="exampleInputEmail1" class="form-label">Email address</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            <label for="paragraph-user" class="form-label">Metti qui il paragrafo che vuoi</label>
+            <input type="text" class="form-control" id="paragraph-user" name="paragraph_user">
         </div>
         <form>
         <div class="mb-3">
-            <label for="exampleInputEmail1" class="form-label">Email address</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            <label for="badword-user" class="form-label">Metti qui la parola da censurare</label>
+            <input type="text" class="form-control" id="badword-user" name="badword_user">
         </div>
+        <button type="submit" class="btn btn-primary">Send</button>
+        <button type="reset" class="btn btn-danger">Reset</button>
     </from>
     </main>
 </body>
