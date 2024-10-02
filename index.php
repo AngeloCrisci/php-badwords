@@ -13,18 +13,20 @@
         <h1>
             PHP BADWORDS
         </h1>
-    <form action="./badword.php" method="GET">
-        <div class="mb-3">
-            <label for="paragraph-user" class="form-label">Metti qui il paragrafo che vuoi</label>
-            <input type="text" class="form-control" id="paragraph-user" name="paragraph_user">
+        <div class="container">
+            <form action="./badword.php" method="GET">
+                <div class="mb-3">
+                    <label for="paragraph-user" class="form-label">Metti qui il paragrafo che vuoi</label>
+                    <input type="text" class="form-control" id="paragraph-user" name="paragraph_user">
+                </div>
+                <form>
+                <div class="mb-3">
+                    <label for="badword-user" class="form-label">Metti qui la parola da censurare</label>
+                    <input type="text" class="form-control" id="badword-user" name="badword_user">
+                </div>
+                <button type="submit" class="btn btn-primary">Send</button>
+                <button type="reset" class="btn btn-danger">Reset</button>
+            </from>
         </div>
-        <form>
-        <div class="mb-3">
-            <label for="badword-user" class="form-label">Metti qui la parola da censurare</label>
-            <input type="text" class="form-control" id="badword-user" name="badword_user">
-        </div>
-        <button type="submit" class="btn btn-primary">Send</button>
-        <button type="reset" class="btn btn-danger">Reset</button>
-    </from>
     </main>
 </body>
