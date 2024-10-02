@@ -26,6 +26,12 @@ $badword = $_GET["badword_user"];
                 è la sua lungezza è 
                 <?php echo strlen($paragraph); ?>
             </h2>
+            <h2>Il tuo paragrafo è:
+                <?php  $paragraph; echo str_ireplace($badword, "***", $paragraph); ?>
+                è la sua lungezza è 
+                <?php echo strlen($paragraph); 
+                    ?>
+            </h2>
         </div>
     </main>
 </body>
